@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 const { initializeApp } = require("firebase/app");
 // import { getAnalytics } from "firebase/analytics";
-const { getAuth, GoogleAuthProvider } = require("firebase/auth");
+const { getAuth, GoogleAuthProvider, GithubAuthProvider } = require("firebase/auth");
 const { getFirestore } = require("firebase/firestore");
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -24,5 +24,6 @@ const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
 exports.auth = getAuth(app);
-exports.provider = new GoogleAuthProvider();
+exports.googleProvider = new GoogleAuthProvider();
+exports.githubProvider = new GithubAuthProvider();
 exports.db = getFirestore(app);
