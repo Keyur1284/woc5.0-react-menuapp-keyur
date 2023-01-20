@@ -4,8 +4,11 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/navbar';
 import { Home } from './pages/home';
 import { Food } from './pages/food';
+import { Login } from './pages/login';
+import { About } from './pages/about';
 
 function App() {
+
   return (
     <div className="App">
       <Router>
@@ -20,6 +23,8 @@ function App() {
             <Route path="veg" element={<Food type="veg" />} />
             <Route path="nonveg" element={<Food type="nonveg" />} />
           </Route>
+          <Route path='/login' element={<Login />} />
+          <Route path='/about' element={<About />} />
           <Route path="*" element={<p className="display-1 text-danger">Error 404! Page not Found!</p>} />
         </Routes>
       </Router>
