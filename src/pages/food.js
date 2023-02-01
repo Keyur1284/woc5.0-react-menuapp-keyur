@@ -1,10 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { getDocs, collection } from "firebase/firestore";
-import { db, auth } from "../config/firebase";
+import { db } from "../config/firebase";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "../App.css";
-
 
 export const Food = (params) => {
     const [foods, setFoods] = useState([]);
@@ -38,18 +36,18 @@ export const Food = (params) => {
     }, [params]);
 
     return (
-        <div className="justify-content-start row row-cols-1 bg-dark row-cols-md-3 g-3">
+        <div className="justify-content-start row row-cols-1 bg-dark row-cols-md-3 g-1 m-0 p-0">
             {
-                foods?.map((food, index) => (
-                    <div className="col "  key={index}>
-                    <div className="card h-100 text-start bg-dark text-white m-2 p-5">
-                        <img src={food.image} className="card-img-top h-50 w-100" alt={food.name} />
+                foods?.sort((a, b) => (b.rating - a.rating)).map((food, index) => (
+                    <div className="col"  key={index}>
+                    <div className="card foodcard w-100 h-100 text-start bg-dark text-white m-2 p-5">
+                        <img src={food.image} className="card-img-top w-100" style={{height: "300px"}} alt={food.name} />
                         <div className="card-body"> 
-                            <h5 className="card-title display-6">Item Name: {food.name}</h5>
-                            <h6 className="card-text">Price: {food.price}</h6>
-                            <h6 className="card-text">Description: {food.description}</h6>
+                            <h5 className="card-title display-6">{food.name}</h5>
+                            <h6 className="card-text display-6">Price: {food.price}</h6>
+                            <h6 className="card-text" style={{height: "175px", marginTop: "55px"}}>Description: {food.description}</h6>
                             <h6 className="card-text">Food type: {food.eatable? "Vegetarian" : "Non-vegetarian"}, {food.type}</h6>
-                            <h6 className="card-text">Rating: {food.rating}/10</h6>
+                            <h6 className="card-text rating rounded-3">Rating: {food.rating}/10</h6>
                             <a className="btn btn-info" href={food.video} target="_blank" >Recipe video</a>
                         </div>
                     </div>
