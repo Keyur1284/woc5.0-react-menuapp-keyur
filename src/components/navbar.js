@@ -3,7 +3,6 @@ import "../App.css";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../config/firebase";
 import { useAuthState } from 'react-firebase-hooks/auth';
-
 export const Navbar = () => {
 
     const [user] = useAuthState(auth);
@@ -12,6 +11,7 @@ export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
+                <img src="https://i.pinimg.com/474x/13/4f/1e/134f1e4c68ac8dd76cbbb05dcc445e8e--kiwi-branding.jpg" alt="logo" className="rounded-circle m-2" style={{height: "50px", width: "50px"}} />
                 <Link className="navbar-brand" to="/">KIWI Foods</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@ export const Navbar = () => {
                             <Link className="nav-link active" aria-current="page" to="/food">All Items</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Meals 
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -35,7 +35,7 @@ export const Navbar = () => {
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Veg/Non-Veg 
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -44,14 +44,15 @@ export const Navbar = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/about">About</Link>
+                            <Link className="nav-link active" aria-current="page" to="/about">About Us</Link>
                         </li>
                     </ul>
-                        {user ? (
+                      {user ? (
                             <>
                                 <p className="text-white m-3">{user?.displayName}</p>
-                                <img src={user?.photoURL || "https://live.staticflickr.com/5694/30494157195_47f0c84c03_b.jpg"} alt="profile" width="50" height="50" className="rounded-circle me-3" />
-                                <button className="btn btn-outline-danger" type="submit" onClick={() => auth.signOut()}>Sign Out</button>
+                            <Link to="/profile"><img src={user?.photoURL || "https://live.staticflickr.com/5694/30494157195_47f0c84c03_b.jpg"} alt="profile" width="50px" height="50px" className="rounded-circle me-3" />
+                                </Link>
+                            <Link to="/"><button className="btn btn-outline-danger" type="submit" onClick={() => auth.signOut()}>Sign Out</button></Link>
                             </>
                         ) : (
                             
