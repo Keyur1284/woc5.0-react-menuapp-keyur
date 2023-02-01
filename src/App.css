@@ -38,8 +38,24 @@
 }
 
 .keyur {
-  margin-left: 60px;
-  max-width: 90vw;
+  background-image: url("https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwc2hvcHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+}
+
+.imagehome {
+  background-image: url("https://res.cloudinary.com/trends-publishing/image/upload/dpr_1.0,g_center,w_760/f_auto,q_auto:best/cb_1220571504140671.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.test {
+  flex-direction: column;
 }
 
 .login-with-google-btn {
@@ -74,4 +90,103 @@
   background-color: #ebebeb;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
+}
+
+@keyframes spinPizza {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pizza {
+  transition: transform 0.5s;
+  animation: spinPizza 5s linear infinite;
+}
+
+.pizza:hover {
+  transform: scale(1.2);
+}
+
+
+@keyframes moveBurger {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(50px); }
+  100% { transform: translateX(0); }
+}
+
+.burger {
+  animation: moveBurger 2s ease-in-out infinite;
+  transition: transform 0.5s;
+}
+
+.burger:hover {
+  transform: scale(1.2);
+}
+
+.foodcard {
+  transition: transform 0.5s;
+}
+
+.foodcard:hover {
+  transform: scale(1.1);
+}
+
+@keyframes sushiRoll {
+  from { transform: translateY(0); }
+  to { transform: translateY(100%); }
+}
+
+.sushi-roll {
+  animation: sushiRoll 5s linear infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.hamburger {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.cupcake {
+  transition: transform 0.5s;
+}
+
+.cupcake:hover {
+  transform: scale(1.2);
+}
+
+.rating{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    color:white;
+    background-color:#ae00ff; 
+    padding: 10px;
+}
+
+.foodbutton {
+  background-color: rgb(255, 170, 0); 
+  color: white; 
+  font-size: 20px; 
+  padding: 13px 20px;
+  border-radius: 5px; 
+  text-align: center; 
+  text-decoration:wavy; 
+  transition: transform 0.5s;
+}
+
+.foodbutton:hover {
+  background-color: red; 
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.breakfast-button {
+  box-shadow: 2px 2px 2px #805300; 
+}
+
+.breakfast-button:hover {
+  box-shadow: 4px 4px 4px #805300;
 }
