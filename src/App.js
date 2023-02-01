@@ -6,11 +6,12 @@ import { Home } from './pages/home';
 import { Food } from './pages/food';
 import { Login } from './pages/login';
 import { About } from './pages/about';
+import { Profile } from './pages/profile';
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="App bg-dark p-2">
       <Router>
         <Navbar />
         <Routes>
@@ -25,6 +26,7 @@ function App() {
           </Route>
           <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
+          <Route path='/profile' element={<Profile />} />
           <Route path="*" element={<p className="display-1 text-danger">Error 404! Page not Found!</p>} />
         </Routes>
       </Router>
