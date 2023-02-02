@@ -92,6 +92,7 @@
   cursor: not-allowed;
 }
 
+
 @keyframes spinPizza {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -130,30 +131,15 @@
   transform: scale(1.1);
 }
 
-@keyframes sushiRoll {
-  from { transform: translateY(0); }
-  to { transform: translateY(100%); }
-}
-
-.sushi-roll {
-  animation: sushiRoll 5s linear infinite;
-}
-
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-
 .hamburger {
   animation: bounce 2s ease-in-out infinite;
 }
 
-.cupcake {
+.fastfood {
   transition: transform 0.5s;
 }
 
-.cupcake:hover {
+.fastfood:hover {
   transform: scale(1.2);
 }
 
