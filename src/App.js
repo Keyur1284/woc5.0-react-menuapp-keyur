@@ -7,6 +7,7 @@ import { Food } from './pages/food';
 import { Login } from './pages/login';
 import { About } from './pages/about';
 import { Profile } from './pages/profile';
+import { Reviews } from './pages/reviews';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/about' element={<About />} />
           <Route path='/profile' element={<Profile />} />
+          <Route path='/reviews' element={<Reviews />} />
           <Route path="*" element={<p className="display-1 text-danger">Error 404! Page not Found!</p>} />
         </Routes>
       </Router>
