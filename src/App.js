@@ -1,22 +1,21 @@
 import './App.css';
-import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/navbar';
 import { Home } from './pages/home';
 import { Food } from './pages/food';
 import { Login } from './pages/login';
 import { About } from './pages/about';
 import { Profile } from './pages/profile';
-import { Reviews } from './pages/reviews';
+import { Footer } from './components/footer';
+import { Error } from './pages/error';
 
 function App() {
-
   return (
     <div className="App bg-dark p-2">
-      <Router>
+      <HashRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/food">
             <Route default path="" element={<Food type="all" />} />
             <Route path="breakfast" element={<Food type="breakfast" />} />
@@ -26,12 +25,12 @@ function App() {
             <Route path="nonveg" element={<Food type="nonveg" />} />
           </Route>
           <Route path='/login' element={<Login />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/about-us' element={<About />} />
           <Route path='/profile' element={<Profile />} />
-          <Route path='/reviews' element={<Reviews />} />
-          <Route path="*" element={<p className="display-1 text-danger">Error 404! Page not Found!</p>} />
+          <Route path="*" element={<Error />} />
         </Routes>
-      </Router>
+        <Footer />
+      </ HashRouter>
     </div>
   );
 }
