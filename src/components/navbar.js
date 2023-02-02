@@ -11,7 +11,10 @@ export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
-                <img src="https://i.pinimg.com/474x/13/4f/1e/134f1e4c68ac8dd76cbbb05dcc445e8e--kiwi-branding.jpg" alt="logo" className="rounded-circle m-2" style={{height: "50px", width: "50px"}} />
+                {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                <a href="https://github.com/Keyur1284/woc5.0-react-menuapp-keyur" target="_blank">
+                <img src="https://i.pinimg.com/474x/13/4f/1e/134f1e4c68ac8dd76cbbb05dcc445e8e--kiwi-branding.jpg" alt="logo" className="rounded-circle m-2" style={{height: "50px", width: "50px"}}  />
+                </a>
                 <Link className="navbar-brand" to="/">KIWI Foods</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -19,13 +22,13 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                            <Link className="nav-link" aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/food">All Items</Link>
+                            <Link className="nav-link" aria-current="page" to="/food">All Items</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Meals 
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -35,7 +38,7 @@ export const Navbar = () => {
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Veg/Non-Veg 
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -44,7 +47,10 @@ export const Navbar = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/about">About Us</Link>
+                            <Link className="nav-link" aria-current="page" to="/reviews">Reviews</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" aria-current="page" to="/about">About Us</Link>
                         </li>
                     </ul>
                       {user ? (
