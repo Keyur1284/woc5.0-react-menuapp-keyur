@@ -9,7 +9,7 @@ export const Home = () => {
             <div className="container">
                 <div className="row">
                     <div className="col d-flex justify-content-center">
-                        <h1 className="display-1 rounded-3 p-2" style={{ textShadow: "1px 1px #11303F", backgroundColor: "white", opacity: "75%", color: "#11303F", marginTop: "170px" }}>Welcome to KIWI Foods!</h1>
+                        <h1 className="display-1 rounded-3 p-2" style={{ textShadow: "1px 1px #11303F", backgroundColor: "white", opacity: "75%", color: "#11303F", marginTop: "170px" }}>Welcome to Kiwi Foods!</h1>
                     </div>
                 </div>
                 <div className="col d-flex justify-content-center">
