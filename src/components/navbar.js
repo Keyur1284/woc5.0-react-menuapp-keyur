@@ -15,7 +15,7 @@ export const Navbar = () => {
                 <a href="https://github.com/Keyur1284/woc5.0-react-menuapp-keyur" target="_blank">
                 <img src="https://i.pinimg.com/474x/13/4f/1e/134f1e4c68ac8dd76cbbb05dcc445e8e--kiwi-branding.jpg" alt="logo" className="rounded-circle m-2" style={{height: "50px", width: "50px"}}  />
                 </a>
-                <Link className="navbar-brand" to="/">KIWI Foods</Link>
+                <Link className="navbar-brand" to="/">KIWI FOODS</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -47,10 +47,7 @@ export const Navbar = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="/reviews">Reviews</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="/about">About Us</Link>
+                            <Link className="nav-link" aria-current="page" to="/about-us">About Us</Link>
                         </li>
                     </ul>
                       {user ? (
