@@ -29,12 +29,15 @@ export const Home = () => {
 
                 <div>
                     <div className="row  mt-5">
-                            <div className="col cupcake d-flex justify-content-center" style={{height: "150px"}}>
-                            <img src="https://freesvg.org/img/icecream-chocolate.png" alt="cupcake" />
-                            </div>
-                        <div className="col pizza d-flex justify-content-center" style={{height: "150px"}}>
+                        <div className="col pizza d-flex justify-content-center" style={{height: "160px"}}>
                             <img src="https://freesvg.org/img/1548611293.png" alt="pizza" />
                          </div>
+                            <div className="col fastfood d-flex justify-content-center" style={{height: "185px"}}>
+                            <img src="https://freesvg.org/img/Gerald-G-Fast-Food-Breakfast-FF-Menu-3.png" alt="fastfood" />
+                            </div>
+                            <div className="col fastfood d-flex justify-content-center" style={{height: "170px"}}>
+                            <img src="https://freesvg.org/img/Halloween-Donut.png" alt="fastfood" />
+                            </div>
                          <div className="col burger d-flex justify-content-center" style={{height: "150px"}}>
                             <img src="https://repository-images.githubusercontent.com/456213451/a2e3f991-942f-4dbc-8fe2-0b1b1aa2ed33" alt="burger" />
                          </div>
