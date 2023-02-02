@@ -8,6 +8,7 @@ import { About } from './pages/about';
 import { Profile } from './pages/profile';
 import { Footer } from './components/footer';
 import { Error } from './pages/error';
+import React from "react";
 
 function App() {
   return (

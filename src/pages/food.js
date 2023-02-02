@@ -3,6 +3,8 @@ import { getDocs, collection } from "firebase/firestore";
 import { db } from "../config/firebase";
 import { useEffect, useState } from "react";
 import "../App.css";
+import React from "react";
+
 
 export const Food = (params) => {
     const [foods, setFoods] = useState([]);

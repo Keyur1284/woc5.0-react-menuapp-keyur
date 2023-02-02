@@ -3,7 +3,8 @@ import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import "../App.css"
+import "../App.css";
+import React from "react";
 
 export const Login = () => {
 
