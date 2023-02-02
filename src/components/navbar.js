@@ -62,7 +62,7 @@ export const Navbar = () => {
                             </>
                         ) : (
                             
-                            <button className="btn btn-info" type="submit" onClick={() => navigate("/login")} >Login</button>
+                            <button className="btn btn-success" type="submit" onClick={() => navigate("/login")} >Login</button>
                         )
                         }
                 </div>
