@@ -6,14 +6,14 @@ const foodRef = collection(db, "food");
 const addData = async () => {
 
     let data = {
-        name: "Basted Eggs",
-        price: 120,
-        description: "This recipe produces a delicious, simple egg with satisfying, set whites and a creamy, runny yolk. It's similar to a poached egg, but more flavorful and less fussy.",
+        name: "Sausage Strata",
+        price: 90,
+        description: "Tasty egg casserole that husband approves! I frequently make this dish because it's so easy to make. This recipe can be easily doubled or tripled, but you may have to cook it longer.",
         eatable: false,
         type: "Breakfast",
-        rating: 8.4,
-        video: "https://www.youtube.com/watch?v=Kd3lDnP2dqA",
-        image: "https://www.allrecipes.com/thmb/qwifKe4Fj1j8HZrujDDG9STsqwo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/basted-eggs-mfs-4x3-80-1-2000-ee0e8767f2c44494980b349c39a116cd.jpg"
+        rating: 8.1,
+        video: "https://www.youtube.com/watch?v=g0A_WpD7wWI",
+        image: "https://www.allrecipes.com/thmb/LnhLm0aOuo9YUcMNLDz72zqnBsY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4516609-87a9bdd46fb14bb1ad853b2185e81d92.jpg"
     }
         console.log(data);
     data = await addDoc(foodRef, {
