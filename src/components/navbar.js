@@ -4,6 +4,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../config/firebase";
 import { useAuthState } from 'react-firebase-hooks/auth';
+
 export const Navbar = () => {
 
     const [user] = useAuthState(auth);
@@ -53,8 +54,8 @@ export const Navbar = () => {
                     </ul>
                       {user ? (
                             <>
-                                <p className="text-white m-3">{user?.displayName}</p>
-                            <Link to="/profile"><img src={user?.photoURL || "https://live.staticflickr.com/5694/30494157195_47f0c84c03_b.jpg"} alt="profile" width="50px" height="50px" className="rounded-circle me-3" />
+                                <p className="text-white m-3">{user.displayName}</p>
+                            <Link to="/profile"><img src={user.photoURL || "https://live.staticflickr.com/5694/30494157195_47f0c84c03_b.jpg"} alt="profile" width="50px" height="50px" className="rounded-circle me-3" />
                                 </Link>
                             <Link to="/"><button className="btn btn-outline-danger" type="submit" onClick={() => auth.signOut()}>Sign Out</button></Link>
                             </>

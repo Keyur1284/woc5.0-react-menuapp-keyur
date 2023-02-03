@@ -40,7 +40,7 @@ export const Food = (params) => {
     return (
         <div className="justify-content-start row row-cols-1 bg-dark row-cols-md-3 g-1 m-0 p-0">
             {
-                foods?.sort((a, b) => (b.rating - a.rating)).map((food, index) => (
+                foods.sort((a, b) => (b.rating - a.rating)).map((food, index) => (
                     <div className="col"  key={index}>
                     <div className="card foodcard w-100 h-100 text-start bg-dark text-white m-2 p-5">
                         <img src={food.image} className="card-img-top w-100" style={{height: "300px"}} alt={food.name} />
