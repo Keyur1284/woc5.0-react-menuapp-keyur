@@ -16,13 +16,13 @@ export const Footer = () => {
   return (
     <MDBFooter bgColor='dark' className='text-center text-white text-lg-start'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4'>
-        <div className='me-5 d-none d-lg-block mt-3' style={{marginLeft: "200px"}}>
+        <div className='me-5 d-none d-lg-block mt-3' style={{marginLeft: "108px"}}>
           <span className='h3'>Follow us</span>
         </div>
 
         <div>
            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-           <a href="https:github.com/Keyur1284" target="_blank"><button className="btn btn-lg btn-dark rounded-circle text-white"  style={{height: "75px"}}>
+           <a href="https://github.com/Keyur1284/" target="_blank"><button className="btn btn-lg btn-dark rounded-circle text-white"  style={{height: "75px", marginLeft: "100px"}}>
             <GitHubIcon sx={{ fontSize: 40 }} /> 
            </button></a>
            <a href="https://www.linkedin.com/in/keyur-govrani-b94277237/" target="_blank"><button className="btn btn-lg btn-dark rounded-circle text-white" style={{height: "75px"}}>
@@ -37,7 +37,7 @@ export const Footer = () => {
            <a href="https://www.instagram.com/_keyurr/" target="_blank"><button className="btn btn-lg btn-dark rounded-circle text-white" style={{height: "75px"}}>
              <InstagramIcon sx={{ fontSize: 40 }} />
            </button></a>
-           <a href="https://www.facebook.com/keyur.govrani" target="_blank"><button className="btn btn-lg btn-dark rounded-circle text-white" style={{height: "75px", marginRight: "73px"}}>
+           <a href="https://www.facebook.com/keyur.govrani" target="_blank"><button className="btn btn-lg btn-dark rounded-circle text-white" style={{height: "75px"}}>
              <FacebookIcon sx={{ fontSize: 40 }} />
            </button></a>
         </div>
