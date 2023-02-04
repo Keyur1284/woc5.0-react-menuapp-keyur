@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "efa3363503ab74c6f4bc",
+    "revision": "31c5cd7e78ce8965b3d4",
     "url": "/woc5.0-react-menuapp-keyur/static/css/main.4f3d61ec.chunk.css"
   },
   {
-    "revision": "efa3363503ab74c6f4bc",
-    "url": "/woc5.0-react-menuapp-keyur/static/js/main.efa33635.chunk.js"
+    "revision": "31c5cd7e78ce8965b3d4",
+    "url": "/woc5.0-react-menuapp-keyur/static/js/main.31c5cd7e.chunk.js"
   },
   {
     "revision": "93c748a80b187c4a0720",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/woc5.0-react-menuapp-keyur/static/js/runtime~main.cfe8aa73.js"
   },
   {
-    "revision": "d17b176d16f1d2b65f39a3d3b5b233f2",
+    "revision": "ec98626fec14996f97545864e8af64b2",
     "url": "/woc5.0-react-menuapp-keyur/index.html"
   }
 ];
